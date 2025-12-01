@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aya Design | עיצוב פנים ואדריכלות</title>
+    
+    <!-- Google Fonts: David Libre (Luxury Display), Frank Ruhl Libre (Serif), Assistant (Modern Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600&family=David+Libre:wght@400;500;700&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'aya-cream': '#F9F8F6',
+              'aya-sand': '#E8E4D9',
+              'aya-gold': '#C5A059',
+              'aya-gold-dark': '#A38346',
+              'aya-stone': '#8C8C8C',
+              'aya-charcoal': '#1A1A1A', // Slightly darker for higher contrast
+            },
+            fontFamily: {
+              sans: ['Assistant', 'sans-serif'],
+              serif: ['Frank Ruhl Libre', 'serif'],
+              display: ['David Libre', 'serif'], // New Luxury Font
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out',
+              'slow-spin': 'spin 12s linear infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Smooth scrolling for anchor links */
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #F9F8F6;
+        color: #1A1A1A;
+        font-family: 'Assistant', sans-serif;
+      }
+      h1, h2, h3, h4 {
+        font-family: 'David Libre', serif;
+      }
+      .font-display {
+        font-family: 'David Libre', serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
