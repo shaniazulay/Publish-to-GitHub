@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <span className="block text-aya-gold-dark font-sans font-semibold tracking-[0.2em] text-sm md:text-base mb-4 uppercase">
-            עיצוב פנים & הום סטיילינג
+            עיצווווווב פנים & הום סטיילינג
           </span>
         </motion.div>
 
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
         >
           לעצב חלום
           <br />
-          <span className="text-6xl md:text-7xl lg:text-8xl block mt-2 opacity-90">למציאות חיה</span>
+          <span className="text-6xl md:text-7xl lg:text-8xl block mt-2 opacity-90"> למציאות חיהה ונושמתה</span>
         </motion.h1>
 
         <motion.p
