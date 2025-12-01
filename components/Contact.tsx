@@ -60,20 +60,24 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            <form className="bg-white/5 p-8 md:p-12 rounded-sm border border-white/10">
+            <form 
+              action="https://formspree.io/f/xjknrgyp" 
+              method="POST" 
+              className="bg-white/5 p-8 md:p-12 rounded-sm border border-white/10"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">שם מלא</label>
-                  <input type="text" className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors" placeholder="ישראל ישראלי" />
+                  <input type="text" name="name" required className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors" placeholder="ישראל ישראלי" />
                 </div>
                 <div>
                   <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">טלפון</label>
-                  <input type="tel" className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors" placeholder="050-0000000" />
+                  <input type="tel" name="phone" required className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors" placeholder="050-0000000" />
                 </div>
               </div>
               <div className="mb-6">
                 <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">סוג הפרויקט</label>
-                <select className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors [&>option]:text-aya-charcoal">
+                <select name="project-type" className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors [&>option]:text-aya-charcoal">
                   <option>עיצוב פנים מלא</option>
                   <option>הום סטיילינג</option>
                   <option>שינויי דיירים</option>
@@ -82,10 +86,10 @@ const Contact: React.FC = () => {
               </div>
               <div className="mb-8">
                 <label className="block text-xs font-medium text-gray-400 mb-2 uppercase tracking-wide">הודעה</label>
-                <textarea rows={4} className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors" placeholder="ספר/י לי קצת על החלום שלך..."></textarea>
+                <textarea name="message" rows={4} className="w-full bg-transparent border-b border-gray-700 text-white p-2 focus:border-aya-gold focus:outline-none transition-colors" placeholder="ספר/י לי קצת על החלום שלך..."></textarea>
               </div>
               
-              <button className="w-full bg-aya-gold text-white py-4 font-medium tracking-widest uppercase hover:bg-white hover:text-aya-charcoal transition-all duration-300">
+              <button type="submit" className="w-full bg-aya-gold text-white py-4 font-medium tracking-widest uppercase hover:bg-white hover:text-aya-charcoal transition-all duration-300">
                 שלח הודעה
               </button>
             </form>
